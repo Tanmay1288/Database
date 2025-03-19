@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> mini whatsapp</title>
+</head>
+<body>
+    <h3>All Chats</h3>
+
+<% for (let chat of chats) { %>
+    <div class="chat">
+        <p><strong>From:</strong> <%= chat.from %></p>
+        <hr>
+        <div class="msg">
+            <p><%= chat.msg %></p>
+        </div>
+        <hr>
+        <p><strong>Received by:</strong> <%= chat.to %></p>
+        <hr>
+    </div>
+<% } %>
+
+    
+</body>
+</html>
